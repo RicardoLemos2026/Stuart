@@ -18,71 +18,72 @@
   --meta-meg:#C9A84C;
 }
 *{margin:0;padding:0;box-sizing:border-box;}
-body{font-family:'Segoe UI',Arial,sans-serif;background:var(--bg);color:var(--text);min-height:100vh;overflow-x:hidden;}
+html{font-size:18px;}
+body{font-family:'Segoe UI',Arial,sans-serif;background:var(--bg);color:var(--text);min-height:100vh;overflow-x:hidden;font-size:1rem;}
 body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellipse 60% 40% at 80% 10%,rgba(30,138,60,.07) 0%,transparent 60%),radial-gradient(ellipse 40% 40% at 10% 85%,rgba(30,138,60,.04) 0%,transparent 60%);pointer-events:none;z-index:0;}
 
-header{background:linear-gradient(180deg,#060d07 0%,#0d1a0f 100%);border-bottom:1px solid var(--border);padding:14px 0;position:sticky;top:0;z-index:200;box-shadow:0 4px 40px rgba(0,0,0,.7);}
-.hi{max-width:1380px;margin:0 auto;padding:0 28px;display:flex;align-items:center;justify-content:space-between;gap:20px;}
-.logo{display:flex;align-items:center;gap:14px;}
-.logo img{width:52px;height:52px;border-radius:50%;border:2px solid var(--green);object-fit:cover;}
-.brand h1{font-size:1.1rem;font-weight:700;letter-spacing:.05em;color:var(--green-l);}
-.brand p{font-size:.6rem;letter-spacing:.22em;text-transform:uppercase;color:var(--muted);margin-top:2px;}
-.hw{background:rgba(30,138,60,.1);border:1px solid var(--border);border-radius:7px;padding:7px 16px;text-align:right;}
-.hw .l{font-size:.56rem;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);}
-.hw .v{font-size:.82rem;font-weight:700;color:var(--green-l);}
+header{background:linear-gradient(180deg,#060d07 0%,#0d1a0f 100%);border-bottom:1px solid var(--border);padding:18px 0;position:sticky;top:0;z-index:200;box-shadow:0 4px 40px rgba(0,0,0,.7);}
+.hi{max-width:1440px;margin:0 auto;padding:0 36px;display:flex;align-items:center;justify-content:space-between;gap:20px;}
+.logo{display:flex;align-items:center;gap:16px;}
+.logo img{width:68px;height:68px;border-radius:50%;border:3px solid var(--green);object-fit:cover;}
+.brand h1{font-size:1.3rem;font-weight:700;letter-spacing:.04em;color:var(--green-l);}
+.brand p{font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);margin-top:3px;}
+.hw{background:rgba(30,138,60,.1);border:1px solid var(--border);border-radius:8px;padding:10px 20px;text-align:right;}
+.hw .l{font-size:.68rem;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);}
+.hw .v{font-size:1rem;font-weight:700;color:var(--green-l);margin-top:2px;}
 
-.tabs-sticky{background:var(--bg2);border-bottom:1px solid var(--border);position:sticky;top:62px;z-index:150;}
-.tbar{max-width:1380px;margin:0 auto;padding:0 28px;display:flex;}
-.tbtn{padding:13px 22px;font-size:.68rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;background:transparent;border:none;color:var(--muted);cursor:pointer;border-bottom:2px solid transparent;margin-bottom:-1px;transition:all .2s;}
+.tabs-sticky{background:var(--bg2);border-bottom:1px solid var(--border);position:sticky;top:76px;z-index:150;}
+.tbar{max-width:1440px;margin:0 auto;padding:0 36px;display:flex;}
+.tbtn{padding:16px 28px;font-size:.82rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;background:transparent;border:none;color:var(--muted);cursor:pointer;border-bottom:3px solid transparent;margin-bottom:-1px;transition:all .2s;}
 .tbtn:hover{color:var(--green-l);}
 .tbtn.active{color:var(--green-l);border-bottom-color:var(--green);}
 
-.wrap{max-width:1380px;margin:0 auto;padding:24px 28px 48px;position:relative;z-index:1;}
+.wrap{max-width:1440px;margin:0 auto;padding:28px 36px 56px;position:relative;z-index:1;}
 .tpanel{display:none;}.tpanel.active{display:block;}
 
 /* FILTER */
-.fbar{background:var(--panel);border:1px solid var(--border);border-radius:9px;padding:16px 20px;margin-bottom:22px;}
-.flbl{font-size:.56rem;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);margin-bottom:9px;}
-.chips{display:flex;flex-wrap:wrap;gap:6px;}
-.chip{padding:5px 13px;font-size:.72rem;background:transparent;border:1px solid rgba(30,138,60,.25);border-radius:20px;color:var(--muted);cursor:pointer;transition:all .17s;user-select:none;}
+.fbar{background:var(--panel);border:1px solid var(--border);border-radius:10px;padding:20px 24px;margin-bottom:26px;}
+.flbl{font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);margin-bottom:11px;font-weight:600;}
+.chips{display:flex;flex-wrap:wrap;gap:8px;}
+.chip{padding:7px 16px;font-size:.82rem;background:transparent;border:1px solid rgba(30,138,60,.25);border-radius:20px;color:var(--muted);cursor:pointer;transition:all .17s;user-select:none;}
 .chip:hover{border-color:var(--green);color:var(--green-l);}
 .chip.sel{background:rgba(30,138,60,.2);border-color:var(--green);color:var(--green-l);font-weight:700;}
-.cbtn{padding:5px 14px;font-size:.7rem;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.1);border-radius:20px;color:var(--muted);cursor:pointer;transition:all .17s;}
+.cbtn{padding:7px 16px;font-size:.82rem;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.1);border-radius:20px;color:var(--muted);cursor:pointer;transition:all .17s;}
 .cbtn:hover{border-color:var(--green);color:var(--green-l);}
 
 /* SEC */
-.sec{font-size:.6rem;letter-spacing:.35em;text-transform:uppercase;color:var(--green);margin-bottom:13px;display:flex;align-items:center;gap:10px;}
+.sec{font-size:.72rem;letter-spacing:.3em;text-transform:uppercase;color:var(--green);margin-bottom:16px;display:flex;align-items:center;gap:12px;font-weight:700;}
 .sec::after{content:'';flex:1;height:1px;background:var(--border);}
 
 /* KPI GRID */
-.kgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:22px;}
+.kgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-bottom:26px;}
 @media(max-width:920px){.kgrid{grid-template-columns:repeat(2,1fr);}}
-.kcard{background:var(--panel);border:1px solid var(--border);border-radius:9px;padding:16px;position:relative;overflow:hidden;transition:border-color .2s;}
-.kcard::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,var(--green),transparent);opacity:.5;}
+.kcard{background:var(--panel);border:1px solid var(--border);border-radius:10px;padding:20px;position:relative;overflow:hidden;transition:border-color .2s;}
+.kcard::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,transparent,var(--green),transparent);opacity:.5;}
 .kcard:hover{border-color:rgba(30,138,60,.45);}
-.klbl{font-size:.58rem;letter-spacing:.15em;text-transform:uppercase;color:var(--muted);margin-bottom:7px;}
-.kval{font-size:1.55rem;font-weight:700;color:var(--green-l);line-height:1;margin-bottom:6px;}
-.ksub{font-size:.7rem;color:var(--muted);display:flex;align-items:center;gap:6px;flex-wrap:wrap;}
-.tag{font-size:.6rem;font-weight:700;padding:2px 8px;border-radius:20px;}
+.klbl{font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-bottom:10px;font-weight:600;}
+.kval{font-size:1.9rem;font-weight:700;color:var(--green-l);line-height:1;margin-bottom:8px;}
+.ksub{font-size:.82rem;color:var(--muted);display:flex;align-items:center;gap:8px;flex-wrap:wrap;}
+.tag{font-size:.72rem;font-weight:700;padding:3px 10px;border-radius:20px;}
 .tg{background:rgba(47,194,90,.15);color:var(--meta-mst);}
 .tr{background:rgba(224,82,82,.15);color:var(--meta-min);}
 .ta{background:rgba(255,193,7,.15);color:var(--meta-bas);}
-.pw{margin-top:9px;}
-.pr{display:flex;justify-content:space-between;font-size:.62rem;color:var(--muted);margin-bottom:4px;}
-.pb{height:4px;background:rgba(255,255,255,.06);border-radius:10px;overflow:hidden;}
+.pw{margin-top:12px;}
+.pr{display:flex;justify-content:space-between;font-size:.75rem;color:var(--muted);margin-bottom:5px;}
+.pb{height:6px;background:rgba(255,255,255,.06);border-radius:10px;overflow:hidden;}
 .pf{height:100%;border-radius:10px;background:linear-gradient(90deg,#0a4d1e,#2fc25a);transition:width .7s ease;}
 .pf.over{background:linear-gradient(90deg,#1b5e20,var(--meta-mst));}
 .pf.warn{background:linear-gradient(90deg,#7a5000,var(--meta-bas));}
 
 /* OVERVIEW */
-.ogrid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:22px;}
+.ogrid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-bottom:26px;}
 @media(max-width:900px){.ogrid{grid-template-columns:1fr;}}
-.oc{background:var(--panel);border:1px solid var(--border);border-radius:9px;padding:17px;}
-.ot{font-size:.7rem;font-weight:700;letter-spacing:.06em;color:var(--green);margin-bottom:13px;padding-bottom:8px;border-bottom:1px solid var(--border);}
-.or{display:flex;justify-content:space-between;align-items:center;padding:5px 0;border-bottom:1px solid rgba(255,255,255,.04);}
+.oc{background:var(--panel);border:1px solid var(--border);border-radius:10px;padding:20px;}
+.ot{font-size:.82rem;font-weight:700;letter-spacing:.05em;color:var(--green);margin-bottom:15px;padding-bottom:10px;border-bottom:1px solid var(--border);}
+.or{display:flex;justify-content:space-between;align-items:center;padding:7px 0;border-bottom:1px solid rgba(255,255,255,.04);}
 .or:last-child{border-bottom:none;}
-.ol{font-size:.68rem;color:var(--muted);}
-.ov{font-size:.8rem;font-weight:700;color:var(--text);}
+.ol{font-size:.8rem;color:var(--muted);}
+.ov{font-size:.95rem;font-weight:700;color:var(--text);}
 .ov.gold{color:var(--green-l);}
 .ov.green{color:var(--meta-mst);}
 .ov.red{color:var(--meta-min);}
@@ -93,59 +94,59 @@ header{background:linear-gradient(180deg,#060d07 0%,#0d1a0f 100%);border-bottom:
 .ov.meg{color:var(--meta-meg);}
 
 /* META LEGEND */
-.meta-legend{display:flex;gap:18px;flex-wrap:wrap;margin-bottom:18px;font-size:.65rem;}
-.ml-item{display:flex;align-items:center;gap:6px;font-weight:600;}
-.ml-dot{width:10px;height:10px;border-radius:50%;}
+.meta-legend{display:flex;gap:22px;flex-wrap:wrap;margin-bottom:20px;font-size:.82rem;}
+.ml-item{display:flex;align-items:center;gap:8px;font-weight:600;}
+.ml-dot{width:13px;height:13px;border-radius:50%;}
 
 /* TIERS */
-.tier-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:22px;}
+.tier-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-bottom:26px;}
 @media(max-width:750px){.tier-grid{grid-template-columns:repeat(2,1fr);}}
-.tcard{background:var(--panel);border:1px solid var(--border);border-radius:9px;padding:15px;text-align:center;transition:border-color .2s;}
+.tcard{background:var(--panel);border:1px solid var(--border);border-radius:10px;padding:20px;text-align:center;transition:border-color .2s;}
 .tcard:hover{border-color:rgba(30,138,60,.45);}
-.tc-icon{font-size:1.4rem;margin-bottom:5px;}
-.tc-name{font-size:.58rem;letter-spacing:.15em;text-transform:uppercase;margin-bottom:4px;font-weight:700;}
-.tc-val{font-size:.95rem;font-weight:700;color:var(--green-l);margin-bottom:3px;}
-.tc-sub{font-size:.63rem;color:var(--muted);}
-.tc-bar{height:5px;background:rgba(255,255,255,.06);border-radius:10px;margin-top:8px;overflow:hidden;}
+.tc-icon{font-size:2rem;margin-bottom:7px;}
+.tc-name{font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;margin-bottom:6px;font-weight:700;}
+.tc-val{font-size:1.2rem;font-weight:700;color:var(--green-l);margin-bottom:4px;}
+.tc-sub{font-size:.76rem;color:var(--muted);}
+.tc-bar{height:7px;background:rgba(255,255,255,.06);border-radius:10px;margin-top:10px;overflow:hidden;}
 .tc-fill{height:100%;border-radius:10px;transition:width .8s;}
-.tc-pct{font-size:.72rem;font-weight:700;margin-top:5px;}
+.tc-pct{font-size:.88rem;font-weight:700;margin-top:7px;}
 
 /* PROGRESS */
-.prog-section{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:22px;}
+.prog-section{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-bottom:26px;}
 @media(max-width:780px){.prog-section{grid-template-columns:1fr;}}
-.prog-card{background:var(--panel);border:1px solid var(--border);border-radius:9px;padding:17px;}
-.prog-title{font-size:.7rem;font-weight:700;color:var(--green);margin-bottom:14px;padding-bottom:8px;border-bottom:1px solid var(--border);}
-.prog-row{margin-bottom:13px;}
-.prog-hd{display:flex;justify-content:space-between;margin-bottom:4px;}
-.prog-lbl{font-size:.7rem;font-weight:600;color:var(--text);}
-.prog-pct{font-size:.7rem;font-weight:700;}
-.prog-bg{background:rgba(255,255,255,.06);border-radius:4px;height:7px;overflow:hidden;}
+.prog-card{background:var(--panel);border:1px solid var(--border);border-radius:10px;padding:20px;}
+.prog-title{font-size:.82rem;font-weight:700;color:var(--green);margin-bottom:16px;padding-bottom:10px;border-bottom:1px solid var(--border);}
+.prog-row{margin-bottom:16px;}
+.prog-hd{display:flex;justify-content:space-between;margin-bottom:6px;}
+.prog-lbl{font-size:.85rem;font-weight:600;color:var(--text);}
+.prog-pct{font-size:.85rem;font-weight:700;}
+.prog-bg{background:rgba(255,255,255,.06);border-radius:4px;height:9px;overflow:hidden;}
 .prog-fill{height:100%;border-radius:4px;transition:width .6s;}
-.prog-detail{font-size:.62rem;color:var(--muted);margin-top:3px;}
+.prog-detail{font-size:.75rem;color:var(--muted);margin-top:4px;}
 
 /* CHART */
-.chart-card{background:var(--panel);border:1px solid var(--border);border-radius:9px;padding:18px;margin-bottom:22px;}
-.chart-title{font-size:.7rem;font-weight:700;color:var(--green);margin-bottom:14px;}
-.chart-legend{display:flex;flex-wrap:wrap;gap:14px;margin-top:10px;font-size:.64rem;color:var(--muted);}
-.leg-sq{width:10px;height:10px;border-radius:2px;display:inline-block;margin-right:4px;vertical-align:middle;}
-.leg-ln{width:18px;height:2px;display:inline-block;margin-right:4px;vertical-align:middle;}
+.chart-card{background:var(--panel);border:1px solid var(--border);border-radius:10px;padding:22px;margin-bottom:26px;}
+.chart-title{font-size:.85rem;font-weight:700;color:var(--green);margin-bottom:16px;}
+.chart-legend{display:flex;flex-wrap:wrap;gap:16px;margin-top:12px;font-size:.78rem;color:var(--muted);}
+.leg-sq{width:13px;height:13px;border-radius:2px;display:inline-block;margin-right:5px;vertical-align:middle;}
+.leg-ln{width:20px;height:2px;display:inline-block;margin-right:5px;vertical-align:middle;}
 
 /* TABLE */
-.tw{background:var(--panel);border:1px solid var(--border);border-radius:9px;overflow:hidden;margin-bottom:22px;}
-.twhd{padding:13px 20px;background:rgba(30,138,60,.06);border-bottom:1px solid var(--border);}
-.twhd h3{font-size:.75rem;font-weight:700;color:var(--green-l);letter-spacing:.05em;}
+.tw{background:var(--panel);border:1px solid var(--border);border-radius:10px;overflow:hidden;margin-bottom:26px;}
+.twhd{padding:16px 22px;background:rgba(30,138,60,.06);border-bottom:1px solid var(--border);}
+.twhd h3{font-size:.9rem;font-weight:700;color:var(--green-l);letter-spacing:.04em;}
 .tscroll{overflow-x:auto;}
-table{width:100%;border-collapse:collapse;font-size:.78rem;}
-th{padding:8px 13px;text-align:left;font-size:.55rem;letter-spacing:.15em;text-transform:uppercase;color:var(--muted);border-bottom:1px solid var(--border);white-space:nowrap;}
+table{width:100%;border-collapse:collapse;font-size:.88rem;}
+th{padding:11px 16px;text-align:left;font-size:.68rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);border-bottom:1px solid var(--border);white-space:nowrap;font-weight:700;}
 th.th-min{color:var(--meta-min);}
 th.th-bas{color:var(--meta-bas);}
 th.th-mst{color:var(--meta-mst);}
 th.th-meg{color:var(--meta-meg);}
-td{padding:8px 13px;border-bottom:1px solid rgba(255,255,255,.04);white-space:nowrap;color:var(--text);}
+td{padding:11px 16px;border-bottom:1px solid rgba(255,255,255,.04);white-space:nowrap;color:var(--text);font-size:.88rem;}
 tr:last-child td{border-bottom:none;}
 tr.totrow td{background:rgba(30,138,60,.1);color:var(--green-l);font-weight:700;}
 tr:not(.totrow):hover td{background:rgba(255,255,255,.02);}
-.dot{display:inline-block;width:7px;height:7px;border-radius:50%;margin-right:4px;}
+.dot{display:inline-block;width:9px;height:9px;border-radius:50%;margin-right:5px;}
 .c-min{color:var(--meta-min)!important;}
 .c-bas{color:var(--meta-bas)!important;}
 .c-mst{color:var(--meta-mst)!important;}
@@ -156,16 +157,16 @@ tr:not(.totrow):hover td{background:rgba(255,255,255,.02);}
 .mp.r{color:var(--meta-min);}
 
 /* QUARTER */
-.qgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:22px;}
+.qgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-bottom:26px;}
 @media(max-width:750px){.qgrid{grid-template-columns:repeat(2,1fr);}}
-.qcard{background:var(--panel);border:1px solid var(--border);border-radius:9px;padding:14px;text-align:center;border-top:3px solid var(--green);}
+.qcard{background:var(--panel);border:1px solid var(--border);border-radius:10px;padding:18px;text-align:center;border-top:4px solid var(--green);}
 .qcard.inactive{border-top-color:var(--muted);opacity:.6;}
-.qcard h4{font-size:.58rem;letter-spacing:.15em;text-transform:uppercase;color:var(--muted);margin-bottom:8px;}
-.qcard .qv{font-size:1.05rem;font-weight:700;color:var(--green-l);margin-bottom:3px;}
-.qcard .qm{font-size:.63rem;color:var(--muted);margin-bottom:7px;}
+.qcard h4{font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-bottom:10px;font-weight:700;}
+.qcard .qv{font-size:1.25rem;font-weight:700;color:var(--green-l);margin-bottom:4px;}
+.qcard .qm{font-size:.76rem;color:var(--muted);margin-bottom:9px;}
 
-footer{border-top:1px solid var(--border);padding:16px 0;text-align:center;}
-footer p{font-size:.56rem;letter-spacing:.18em;color:var(--muted);text-transform:uppercase;}
+footer{border-top:1px solid var(--border);padding:18px 0;text-align:center;}
+footer p{font-size:.72rem;letter-spacing:.16em;color:var(--muted);text-transform:uppercase;}
 </style>
 </head>
 <body>
@@ -191,6 +192,7 @@ footer p{font-size:.56rem;letter-spacing:.18em;color:var(--muted);text-transform
     <button class="tbtn active" onclick="switchTab(this,'ger')">Visão Gerencial</button>
     <button class="tbtn" onclick="switchTab(this,'mes')">Comparativo Mensal</button>
     <button class="tbtn" onclick="switchTab(this,'ano')">Tabela Anual</button>
+    <button class="tbtn" onclick="switchTab(this,'custos')">Análise de Custos</button>
   </div>
 </div>
 
@@ -243,8 +245,13 @@ footer p{font-size:.56rem;letter-spacing:.18em;color:var(--muted);text-transform
     <div class="kcard">
       <div class="klbl">Meta Básica do Período</div>
       <div class="kval" id="k-metabas" style="color:var(--meta-bas);">—</div>
-      <div class="ksub"><span id="k-metabas-sub">acumulado selecionado</span></div>
+      <div class="ksub" id="k-metabas-sub">acumulado selecionado</div>
       <div class="pw"><div class="pr"><span>Atingimento</span><span id="k-bas-pct">—</span></div><div class="pb"><div class="pf" id="k-bas-bar" style="width:0"></div></div></div>
+    </div>
+    <div class="kcard" style="border-top-color:var(--blue);">
+      <div class="klbl">Vendas Realizadas (Invoice)</div>
+      <div class="kval" id="k-invoice" style="color:var(--blue);">—</div>
+      <div class="ksub" id="k-invoice-sub">faturado vs. invoiced no período</div>
     </div>
   </div>
 
@@ -334,6 +341,7 @@ footer p{font-size:.56rem;letter-spacing:.18em;color:var(--muted);text-transform
     <div class="tscroll"><table>
       <thead><tr>
         <th>Mês</th><th>Real 2025</th><th>Real 2026</th>
+        <th style="color:var(--blue);">Vendas (Invoice)</th>
         <th class="th-min">🔴 Meta Mín.</th>
         <th class="th-bas">🟡 Meta Bás.</th>
         <th class="th-mst">🟢 Meta Master</th>
@@ -352,10 +360,120 @@ footer p{font-size:.56rem;letter-spacing:.18em;color:var(--muted);text-transform
   <div class="ogrid" style="grid-template-columns:repeat(4,1fr);" id="gapArea"></div>
 </div>
 
+<!-- ══ TAB ANÁLISE DE CUSTOS ══ -->
+<div class="tpanel" id="tab-custos">
+
+  <div class="fbar">
+    <div style="display:flex;gap:22px;flex-wrap:wrap;align-items:flex-end;">
+      <div style="flex:1;min-width:200px;">
+        <div class="flbl">Meses — multi-seleção</div>
+        <div class="chips" id="mChips3"></div>
+      </div>
+      <div><button class="cbtn" onclick="clearCostFilters()">✕ Limpar filtros</button></div>
+    </div>
+  </div>
+
+  <div class="sec">KPIs Financeiros — Período Selecionado</div>
+  <div class="kgrid">
+    <div class="kcard">
+      <div class="klbl">Receita Total</div>
+      <div class="kval" id="c-rev">—</div>
+      <div class="ksub">Jan–Mai 2026</div>
+    </div>
+    <div class="kcard">
+      <div class="klbl">Custos Totais</div>
+      <div class="kval" id="c-exp" style="color:var(--meta-min);">—</div>
+      <div class="ksub" id="c-exp-pct">% da receita</div>
+    </div>
+    <div class="kcard">
+      <div class="klbl">Lucro Líquido</div>
+      <div class="kval" id="c-profit">—</div>
+      <div class="ksub" id="c-profit-sub">margem líquida</div>
+    </div>
+    <div class="kcard">
+      <div class="klbl">Total Overhead</div>
+      <div class="kval" id="c-overhead" style="color:var(--meta-meg);">—</div>
+      <div class="ksub" id="c-overhead-pct">% da receita</div>
+    </div>
+  </div>
+
+  <div class="sec">Estrutura de Custos por Categoria (Jan–Mai)</div>
+  <div class="charts-row" style="display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-bottom:26px;">
+    <div class="chart-card" style="margin-bottom:0;">
+      <div class="chart-title">Participação de Cada Categoria no Custo Total</div>
+      <div style="position:relative;height:300px;"><canvas id="chartCostPie" role="img" aria-label="Distribuição de custos por categoria">Distribuição de custos.</canvas></div>
+    </div>
+    <div class="chart-card" style="margin-bottom:0;">
+      <div class="chart-title">Evolução das Categorias de Custo por Mês (US$)</div>
+      <div style="position:relative;height:300px;"><canvas id="chartCostMonth" role="img" aria-label="Evolução mensal de custos">Evolução mensal.</canvas></div>
+    </div>
+  </div>
+
+  <div class="sec">Receita vs Custos vs Lucro — Mês a Mês</div>
+  <div class="chart-card">
+    <div class="chart-title">Composição do Resultado Mensal (US$)</div>
+    <div style="position:relative;height:300px;"><canvas id="chartRevExpProfit" role="img" aria-label="Receita custos e lucro mensal">Receita, custos e lucro.</canvas></div>
+    <div class="chart-legend">
+      <span><span class="leg-sq" style="background:#2fc25a;"></span>Receita</span>
+      <span><span class="leg-sq" style="background:#E05252;"></span>Custos Totais</span>
+      <span><span class="leg-ln" style="background:#C9A84C;"></span>Lucro Líquido</span>
+    </div>
+  </div>
+
+  <div class="sec">Margem de Lucro Mensal (%)</div>
+  <div class="chart-card">
+    <div class="chart-title">Margem Líquida por Mês</div>
+    <div style="position:relative;height:220px;"><canvas id="chartMargin" role="img" aria-label="Margem de lucro mensal">Margem de lucro.</canvas></div>
+  </div>
+
+  <div class="sec">Detalhamento por Categoria — Mensal e Acumulado</div>
+  <div class="tw">
+    <div class="twhd"><h3>Custos por Categoria (US$)</h3></div>
+    <div class="tscroll"><table>
+      <thead><tr>
+        <th>Categoria</th><th>Jan</th><th>Fev</th><th>Mar</th><th>Abr</th><th>Mai</th><th>Total</th><th>% da Receita</th>
+      </tr></thead>
+      <tbody id="tCustos"></tbody>
+    </table></div>
+  </div>
+
+  <div class="sec">Análise de Maiores Custos (Top Itens — Acumulado)</div>
+  <div class="ogrid" style="grid-template-columns:repeat(3,1fr);" id="topCostsArea"></div>
+
+  <div class="sec">Indicadores de Eficiência</div>
+  <div class="ogrid" style="grid-template-columns:repeat(3,1fr);">
+    <div class="oc">
+      <div class="ot">Custo por Categoria — % Médio da Receita</div>
+      <div class="or"><span class="ol">Labor (Mão de Obra)</span><span class="ov" style="color:#4db8ff;">16,6%</span></div>
+      <div class="or"><span class="ol">Direct Cost (Custo Direto)</span><span class="ov" style="color:var(--meta-min);">39,3%</span></div>
+      <div class="or"><span class="ol">Sales Cost (Marketing)</span><span class="ov" style="color:var(--meta-bas);">4,0%</span></div>
+      <div class="or"><span class="ol">Overhead (Administrativo)</span><span class="ov" style="color:var(--meta-meg);">10,7%</span></div>
+      <div class="or"><span class="ol">Total de Custos</span><span class="ov gold">70,6%</span></div>
+    </div>
+    <div class="oc">
+      <div class="ot">Mês de Melhor e Pior Performance</div>
+      <div class="or"><span class="ol">Maior Margem</span><span class="ov green">Março — 60,0%</span></div>
+      <div class="or"><span class="ol">Menor Margem</span><span class="ov red">Fevereiro — -16,5%</span></div>
+      <div class="or"><span class="ol">Maior Lucro Absoluto</span><span class="ov gold">Março — $154.653</span></div>
+      <div class="or"><span class="ol">Único Mês com Prejuízo</span><span class="ov red">Fevereiro — -$11.831</span></div>
+      <div class="or"><span class="ol">Margem Média Período</span><span class="ov green">29,4%</span></div>
+    </div>
+    <div class="oc">
+      <div class="ot">Maior Item de Custo (Acumulado)</div>
+      <div class="or"><span class="ol">Subcontractor Payment</span><span class="ov" style="color:var(--meta-min);">$205.778</span></div>
+      <div class="or"><span class="ol">Supplies & Materials (Proj.)</span><span class="ov" style="color:var(--meta-min);">$163.044</span></div>
+      <div class="or"><span class="ol">Employee's Salaries (COGS)</span><span class="ov" style="color:#4db8ff;">$171.050</span></div>
+      <div class="or"><span class="ol">Supplies & Materials (Geral)</span><span class="ov" style="color:var(--meta-min);">$25.401</span></div>
+      <div class="or"><span class="ol">Google + Facebook Ads</span><span class="ov" style="color:var(--meta-bas);">$30.206</span></div>
+    </div>
+  </div>
+
+</div>
+
 </div><!-- /wrap -->
 
 <footer>
-  <p>Stuart Construction · Dashboard de Metas 2026 · Fonte: Planilha Acompanhamento Metas</p>
+  <p>Stuart Construction · Dashboard de Metas 2026 · Fonte: Planilha Acompanhamento Metas + Análise Financeira</p>
 </footer>
 
 <script>
@@ -364,40 +482,40 @@ footer p{font-size:.56rem;letter-spacing:.18em;color:var(--muted);text-transform
 // Maio em diante: semanas conforme coluna A
 const D = {months:[
   {n:'Janeiro',  ws:[],
-   r25:100000, r26:128337.30,
+   r25:100000, r26:125687.30, invoice:null,
    metaMin:200000, metaBas:220000, metaMst:242000, metaMeg:266200},
   {n:'Fevereiro', ws:[],
-   r25:100000, r26:140559,
+   r25:100000, r26:71840.00, invoice:null,
    metaMin:200000, metaBas:220000, metaMst:242000, metaMeg:266200},
   {n:'Março', ws:[],
-   r25:80000, r26:228864.70,
+   r25:80000, r26:257618.70, invoice:null,
    metaMin:160000, metaBas:176000, metaMst:193600, metaMeg:212960},
   {n:'Abril', ws:[],
-   r25:90000, r26:111723.25,
+   r25:90000, r26:292113.95, invoice:null,
    metaMin:180000, metaBas:198000, metaMst:217800, metaMeg:239580},
   {n:'Maio', ws:['1 a 9','10 a 16','17 a 23','24 a 31'],
-   r25:80000, r26:0,
+   r25:80000, r26:284413.97, invoice:289449.11,
    metaMin:160000, metaBas:176000, metaMst:193600, metaMeg:212960},
   {n:'Junho', ws:['1 a 6','7 a 13','14 a 20','21 a 27','28 a 30'],
-   r25:80000, r26:0,
+   r25:80000, r26:106718.05, invoice:114173.55,
    metaMin:160000, metaBas:176000, metaMst:193600, metaMeg:212960},
   {n:'Julho', ws:['1 a 4','5 a 11','12 a 18','19 a 25','26 a 31'],
-   r25:100000, r26:0,
+   r25:100000, r26:0, invoice:null,
    metaMin:200000, metaBas:220000, metaMst:242000, metaMeg:266200},
   {n:'Agosto', ws:['1 a 8','9 a 15','16 a 22','23 a 31'],
-   r25:113246, r26:0,
+   r25:113246, r26:0, invoice:null,
    metaMin:226492, metaBas:249141, metaMst:274055, metaMeg:301461},
   {n:'Setembro', ws:['1 a 5','6 a 12','13 a 19','20 a 26','27 a 30'],
-   r25:262145, r26:0,
+   r25:262145, r26:0, invoice:null,
    metaMin:524290, metaBas:576719, metaMst:634391, metaMeg:697830},
   {n:'Outubro', ws:['1 a 10','11 a 17','18 a 24','25 a 31'],
-   r25:148288, r26:0,
+   r25:148288, r26:0, invoice:null,
    metaMin:296576, metaBas:326234, metaMst:358857, metaMeg:394743},
   {n:'Novembro', ws:['1 a 7','8 a 14','15 a 21','22 a 30'],
-   r25:134154, r26:0,
+   r25:134154, r26:0, invoice:null,
    metaMin:268308, metaBas:295139, metaMst:324653, metaMeg:357118},
   {n:'Dezembro', ws:['1 a 5','6 a 12','13 a 19','20 a 26','27 a 31'],
-   r25:169884, r26:0,
+   r25:169884, r26:0, invoice:null,
    metaMin:339768, metaBas:373745, metaMst:411119, metaMeg:452231},
 ]};
 
@@ -481,7 +599,9 @@ function agg(){
     ? mths.filter(m => m.ws.length===0 || m.ws.some(w=>selW.has(w)))
     : mths;
   const s=k=>rows.reduce((acc,m)=>acc+(m[k]||0),0);
-  return{rows, r26:s('r26'), r25:s('r25'),
+  const invoiceRows = rows.filter(m=>m.invoice!=null);
+  const invoiceSum = invoiceRows.reduce((acc,m)=>acc+m.invoice,0);
+  return{rows, r26:s('r26'), r25:s('r25'), invoice: invoiceRows.length>0 ? invoiceSum : null, invoiceCount: invoiceRows.length,
     metaMin:s('metaMin'), metaBas:s('metaBas'), metaMst:s('metaMst'), metaMeg:s('metaMeg')};
 }
 
@@ -521,6 +641,17 @@ function render(){
   $('k-metabas').textContent=fD(a.metaBas);
   $('k-bas-pct').textContent=pctS(a.r26,a.metaBas);
   setBar('k-bas-bar',a.r26,a.metaBas);
+
+  // Vendas Realizadas (Invoice)
+  if(a.invoice!=null){
+    $('k-invoice').textContent=fD(a.invoice);
+    const diff = a.invoice - rows.filter(m=>m.invoice!=null).reduce((acc,m)=>acc+m.r26,0);
+    const diffTxt = diff>=0 ? '+'+fD(diff)+' vs. faturado' : '-'+fD(Math.abs(diff))+' vs. faturado';
+    $('k-invoice-sub').textContent = a.invoiceCount+' mês(es) com dado · '+diffTxt;
+  } else {
+    $('k-invoice').textContent='—';
+    $('k-invoice-sub').textContent='sem dado de invoice no período selecionado';
+  }
 
   // TIERS
   const tiers=[
@@ -656,6 +787,7 @@ function render(){
       <td style="color:var(--green-l);font-weight:700;">${m.n}</td>
       <td>${fD(m.r25)}</td>
       <td style="color:${has?'var(--green-l)':'var(--muted)'};">${has?fD(m.r26):'—'}</td>
+      <td style="color:var(--blue);">${m.invoice!=null?fD(m.invoice):'—'}</td>
       <td class="c-min">${fD(m.metaMin)}</td>
       <td class="c-bas">${fD(m.metaBas)}</td>
       <td class="c-mst">${fD(m.metaMst)}</td>
@@ -672,6 +804,7 @@ function render(){
     <td>TOTAL</td>
     <td>${fD(D.months.reduce((s,m)=>s+m.r25,0))}</td>
     <td>${fD(totalR26)}</td>
+    <td style="color:var(--blue);">${fD(D.months.reduce((s,m)=>s+(m.invoice||0),0))}</td>
     <td class="c-min">${fD(META_ANO.min)}</td>
     <td class="c-bas">${fD(META_ANO.bas)}</td>
     <td class="c-mst">${fD(META_ANO.mst)}</td>
@@ -714,7 +847,7 @@ function renderCharts(rows){
   const bgColors=rows.map(m=>m.r26>=m.metaMin?'rgba(47,194,90,0.85)':m.r26>0?'rgba(255,193,7,0.7)':'rgba(224,82,82,0.4)');
 
   const gridColor='rgba(255,255,255,0.05)';
-  const tickColor='#5a7a5a';
+  const tickColor='#7a9a7a';
   const tFmt=v=>'$'+(v/1000).toFixed(0)+'k';
   const tip={callbacks:{label:ctx=>`${ctx.dataset.label}: $${Math.round(ctx.parsed.y).toLocaleString('en-US')}`}};
 
@@ -732,8 +865,8 @@ function renderCharts(rows){
     options:{responsive:true,maintainAspectRatio:false,
       plugins:{legend:{display:false},tooltip:tip},
       scales:{
-        y:{beginAtZero:true,ticks:{callback:tFmt,color:tickColor,font:{size:11}},grid:{color:gridColor}},
-        x:{ticks:{color:tickColor,font:{size:11},autoSkip:false},grid:{display:false}}
+        y:{beginAtZero:true,ticks:{callback:tFmt,color:tickColor,font:{size:14}},grid:{color:gridColor}},
+        x:{ticks:{color:tickColor,font:{size:14},autoSkip:false},grid:{display:false}}
       }}
   });
 
@@ -750,8 +883,8 @@ function renderCharts(rows){
     options:{responsive:true,maintainAspectRatio:false,
       plugins:{legend:{display:false},tooltip:{callbacks:{label:ctx=>ctx.parsed.y!=null?(ctx.parsed.y>=0?'+':'')+ctx.parsed.y+'% vs 2025':'Sem dados'}}},
       scales:{
-        y:{ticks:{callback:v=>(v>=0?'+':'')+v+'%',color:tickColor,font:{size:11}},grid:{color:gridColor}},
-        x:{ticks:{color:tickColor,font:{size:11},autoSkip:false},grid:{display:false}}
+        y:{ticks:{callback:v=>(v>=0?'+':'')+v+'%',color:tickColor,font:{size:14}},grid:{color:gridColor}},
+        x:{ticks:{color:tickColor,font:{size:14},autoSkip:false},grid:{display:false}}
       }}
   });
 
@@ -769,8 +902,8 @@ function renderCharts(rows){
     options:{responsive:true,maintainAspectRatio:false,
       plugins:{legend:{display:false},tooltip:tip},
       scales:{
-        y:{beginAtZero:true,ticks:{callback:tFmt,color:tickColor,font:{size:11}},grid:{color:gridColor}},
-        x:{ticks:{color:tickColor,font:{size:11},autoSkip:false},grid:{display:false}}
+        y:{beginAtZero:true,ticks:{callback:tFmt,color:tickColor,font:{size:14}},grid:{color:gridColor}},
+        x:{ticks:{color:tickColor,font:{size:14},autoSkip:false},grid:{display:false}}
       }}
   });
 }
@@ -783,9 +916,254 @@ function switchTab(btn,id){
   btn.classList.add('active');
 }
 
+// ─── DADOS — Aba "Análise Financeira" (P&L Jan-Jun 2026)
+const COST = {
+  months: ['Jan','Fev','Mar','Abr','Mai','Jun'],
+  revenue:  [125687.30, 71840.00, 257618.70, 292113.95, 284413.97, 106718.05],
+  labor:    [19686.05, 30374.21, 34224.49, 36446.73, 50318.66, 15616.58],
+  direct:   [53360.24, 28271.74, 32889.22, 130273.20, 160578.39, 9862.41],
+  sales:    [6236.14, 8449.81, 5603.07, 10238.04, 10990.08, 6648.81],
+  overhead: [12009.04, 16575.04, 30249.18, 30130.46, 21521.09, 15484.05],
+  lucro:    [34395.83, -11830.80, 154652.74, 85025.52, 41005.75, 59106.20],
+  margem:   [27.3662, -16.4683, 60.0316, 29.107, 14.4176, 55.3854],
+  owner:    [17520.85, 4043.48, 5737.83, 7407.21, 8597.95, 3389.59],
+  // Top itens de custo (acumulado Jan-Jun)
+  topItems: [
+    {n:"Subcontractor Payment", v:205777.74, cat:'Direct Cost', cor:'#E05252'},
+    {n:"Employee's Salaries (COGS)", v:186666.72, cat:'Labor', cor:'#4db8ff'},
+    {n:"Supplies & Materials (Específicos)", v:172862.14, cat:'Direct Cost', cor:'#E05252'},
+    {n:"Supplies & Materials (Geral)", v:25029.96, cat:'Direct Cost', cor:'#E05252'},
+    {n:"Google Ads", v:24005.96, cat:'Sales Cost', cor:'#ffc107'},
+    {n:"Company Tools & Equipment", v:30202.39, cat:'Overhead', cor:'#C9A84C'},
+    {n:"Facebook Ads", v:12849.01, cat:'Sales Cost', cor:'#ffc107'},
+    {n:"Dumpster", v:11112.36, cat:'Direct Cost', cor:'#E05252'},
+    {n:"Continuing Education", v:10954.30, cat:'Overhead', cor:'#C9A84C'},
+  ]
+};
+
+// ─── State filtro de custos
+let selCostM = new Set();
+let chartCostPie=null, chartCostMonth=null, chartRevExpProfit=null, chartMargin=null;
+
+function buildCostChips(){
+  const el = $('mChips3'); if(!el) return;
+  el.innerHTML = '';
+  COST.months.forEach(item=>{
+    const c = document.createElement('span');
+    c.className = 'chip'+(selCostM.has(item)?' sel':'');
+    c.textContent = item;
+    c.onclick = () => {
+      selCostM.has(item) ? selCostM.delete(item) : selCostM.add(item);
+      buildCostChips();
+      renderCostAnalysis();
+    };
+    el.appendChild(c);
+  });
+}
+function clearCostFilters(){ selCostM.clear(); buildCostChips(); renderCostAnalysis(); }
+
+function costIdx(){
+  if(selCostM.size===0) return COST.months.map((_,i)=>i);
+  return COST.months.map((m,i)=>selCostM.has(m)?i:-1).filter(i=>i>=0);
+}
+
+function renderCostAnalysis(){
+  const sum = arr => arr.reduce((a,b)=>a+b, 0);
+  const idx = costIdx();
+  const pick = arr => idx.map(i=>arr[i]);
+  const labels = idx.map(i=>COST.months[i]);
+
+  const revenue = pick(COST.revenue);
+  const labor = pick(COST.labor);
+  const direct = pick(COST.direct);
+  const sales = pick(COST.sales);
+  const overhead = pick(COST.overhead);
+  const lucro = pick(COST.lucro);
+  const margem = pick(COST.margem);
+
+  const totalRev = sum(revenue);
+  const totalLabor = sum(labor);
+  const totalDirect = sum(direct);
+  const totalSales = sum(sales);
+  const totalOverhead = sum(overhead);
+  const totalExp = totalLabor + totalDirect + totalSales + totalOverhead;
+  const totalLucro = sum(lucro);
+  const margemMedia = totalRev>0 ? (totalLucro/totalRev*100) : 0;
+
+  $('c-rev').textContent = fD(totalRev);
+  $('c-exp').textContent = fD(totalExp);
+  $('c-exp-pct').textContent = totalRev>0 ? (totalExp/totalRev*100).toFixed(1)+'% da receita' : '—';
+  $('c-profit').textContent = fD(totalLucro);
+  $('c-profit').style.color = totalLucro>=0 ? 'var(--meta-mst)' : 'var(--meta-min)';
+  $('c-profit-sub').textContent = 'margem líquida: '+margemMedia.toFixed(1)+'%';
+  $('c-overhead').textContent = fD(totalOverhead);
+  $('c-overhead-pct').textContent = totalRev>0 ? (totalOverhead/totalRev*100).toFixed(1)+'% da receita' : '—';
+
+  // PIZZA — distribuição de custos
+  const ctxPie = $('chartCostPie').getContext('2d');
+  if(chartCostPie) chartCostPie.destroy();
+  chartCostPie = new Chart(ctxPie, {
+    type: 'doughnut',
+    data: {
+      labels: ['Labor','Direct Cost','Sales Cost','Overhead'],
+      datasets: [{
+        data: [totalLabor, totalDirect, totalSales, totalOverhead],
+        backgroundColor: ['#4db8ff','#E05252','#ffc107','#C9A84C'],
+        borderColor: '#172012',
+        borderWidth: 3
+      }]
+    },
+    options: {
+      responsive:true, maintainAspectRatio:false,
+      cutout:'58%',
+      plugins:{
+        legend:{position:'bottom', labels:{color:'#d4e8d4', font:{size:13}, padding:14}},
+        tooltip:{callbacks:{label:ctx=>{
+          const tot = ctx.dataset.data.reduce((a,b)=>a+b,0);
+          const pct = tot>0 ? (ctx.parsed/tot*100).toFixed(1) : '0';
+          return ctx.label+': $'+Math.round(ctx.parsed).toLocaleString('en-US')+' ('+pct+'%)';
+        }}}
+      }
+    }
+  });
+
+  // BARRAS EMPILHADAS — evolução mensal das categorias
+  const ctxMonth = $('chartCostMonth').getContext('2d');
+  if(chartCostMonth) chartCostMonth.destroy();
+  chartCostMonth = new Chart(ctxMonth, {
+    type:'bar',
+    data:{
+      labels,
+      datasets:[
+        {label:'Labor', data:labor, backgroundColor:'#4db8ff'},
+        {label:'Direct Cost', data:direct, backgroundColor:'#E05252'},
+        {label:'Sales Cost', data:sales, backgroundColor:'#ffc107'},
+        {label:'Overhead', data:overhead, backgroundColor:'#C9A84C'},
+      ]
+    },
+    options:{
+      responsive:true, maintainAspectRatio:false,
+      plugins:{
+        legend:{position:'bottom', labels:{color:'#d4e8d4', font:{size:13}, padding:14}},
+        tooltip:{callbacks:{label:ctx=>ctx.dataset.label+': $'+Math.round(ctx.parsed.y).toLocaleString('en-US')}}
+      },
+      scales:{
+        x:{stacked:true, ticks:{color:'#7a9a7a', font:{size:14}}, grid:{display:false}},
+        y:{stacked:true, beginAtZero:true, ticks:{callback:v=>'$'+(v/1000).toFixed(0)+'k', color:'#7a9a7a', font:{size:14}}, grid:{color:'rgba(255,255,255,0.05)'}}
+      }
+    }
+  });
+
+  // RECEITA vs CUSTOS vs LUCRO
+  const ctxREP = $('chartRevExpProfit').getContext('2d');
+  if(chartRevExpProfit) chartRevExpProfit.destroy();
+  chartRevExpProfit = new Chart(ctxREP, {
+    data:{
+      labels,
+      datasets:[
+        {type:'bar', label:'Receita', data:revenue, backgroundColor:'rgba(47,194,90,0.85)', borderRadius:4, order:2},
+        {type:'bar', label:'Custos Totais', data:labels.map((m,i)=>labor[i]+direct[i]+sales[i]+overhead[i]), backgroundColor:'rgba(224,82,82,0.75)', borderRadius:4, order:2},
+        {type:'line', label:'Lucro Líquido', data:lucro, borderColor:'#C9A84C', borderWidth:3, pointRadius:6, pointBackgroundColor:'#C9A84C', fill:false, tension:0.3, order:1},
+      ]
+    },
+    options:{
+      responsive:true, maintainAspectRatio:false,
+      plugins:{
+        legend:{display:false},
+        tooltip:{callbacks:{label:ctx=>ctx.dataset.label+': $'+Math.round(ctx.parsed.y).toLocaleString('en-US')}}
+      },
+      scales:{
+        x:{ticks:{color:'#7a9a7a', font:{size:14}}, grid:{display:false}},
+        y:{beginAtZero:true, ticks:{callback:v=>'$'+(v/1000).toFixed(0)+'k', color:'#7a9a7a', font:{size:14}}, grid:{color:'rgba(255,255,255,0.05)'}}
+      }
+    }
+  });
+
+  // MARGEM MENSAL
+  const ctxMargin = $('chartMargin').getContext('2d');
+  if(chartMargin) chartMargin.destroy();
+  chartMargin = new Chart(ctxMargin, {
+    type:'bar',
+    data:{
+      labels,
+      datasets:[{
+        label:'Margem %',
+        data: margem,
+        backgroundColor: margem.map(v=>v>=40?'rgba(47,194,90,0.9)':v>=0?'rgba(255,193,7,0.75)':'rgba(224,82,82,0.8)'),
+        borderRadius:5
+      }]
+    },
+    options:{
+      responsive:true, maintainAspectRatio:false,
+      plugins:{
+        legend:{display:false},
+        tooltip:{callbacks:{label:ctx=>(ctx.parsed.y>=0?'+':'')+ctx.parsed.y.toFixed(1)+'%'}}
+      },
+      scales:{
+        x:{ticks:{color:'#7a9a7a', font:{size:14}}, grid:{display:false}},
+        y:{ticks:{callback:v=>(v>=0?'+':'')+v+'%', color:'#7a9a7a', font:{size:14}}, grid:{color:'rgba(255,255,255,0.05)'}}
+      }
+    }
+  });
+
+  // TABELA DETALHADA
+  const cats = [
+    {n:'Labor', d:labor, cor:'#4db8ff'},
+    {n:'Direct Cost', d:direct, cor:'#E05252'},
+    {n:'Sales Cost', d:sales, cor:'#ffc107'},
+    {n:'Overhead', d:overhead, cor:'#C9A84C'},
+  ];
+  const theadRow = $('tCustos').closest('table').querySelector('thead tr');
+  theadRow.innerHTML = '<th>Categoria</th>' + labels.map(m=>`<th>${m}</th>`).join('') + '<th>Total</th><th>% da Receita</th>';
+
+  $('tCustos').innerHTML = cats.map(c=>{
+    const tot = sum(c.d);
+    return `<tr>
+      <td style="color:${c.cor};font-weight:700;">${c.n}</td>
+      ${c.d.map(v=>`<td>${fD(v)}</td>`).join('')}
+      <td style="font-weight:700;">${fD(tot)}</td>
+      <td><span class="mp" style="color:${c.cor};">${totalRev>0?(tot/totalRev*100).toFixed(1):'0.0'}%</span></td>
+    </tr>`;
+  }).join('') + `
+  <tr class="totrow">
+    <td>RECEITA</td>
+    ${revenue.map(v=>`<td>${fD(v)}</td>`).join('')}
+    <td>${fD(totalRev)}</td>
+    <td>100%</td>
+  </tr>
+  <tr class="totrow">
+    <td>CUSTOS TOTAIS</td>
+    ${labels.map((m,i)=>`<td>${fD(labor[i]+direct[i]+sales[i]+overhead[i])}</td>`).join('')}
+    <td>${fD(totalExp)}</td>
+    <td>${totalRev>0?(totalExp/totalRev*100).toFixed(1):'0.0'}%</td>
+  </tr>
+  <tr class="totrow">
+    <td>LUCRO LÍQUIDO</td>
+    ${lucro.map(v=>`<td style="color:${v>=0?'var(--meta-mst)':'var(--meta-min)'};">${fD(v)}</td>`).join('')}
+    <td style="color:${totalLucro>=0?'var(--meta-mst)':'var(--meta-min)'};">${fD(totalLucro)}</td>
+    <td>${margemMedia.toFixed(1)}%</td>
+  </tr>`;
+
+  // TOP CUSTOS CARDS (sempre acumulado total - não filtrado por mês, pois são totais consolidados)
+  const catGroups = [
+    {cat:'Direct Cost', cor:'var(--meta-min)', icon:'🔴'},
+    {cat:'Labor', cor:'#4db8ff', icon:'🔵'},
+    {cat:'Sales Cost', cor:'var(--meta-bas)', icon:'🟡'},
+  ];
+  $('topCostsArea').innerHTML = catGroups.map(g=>{
+    const items = COST.topItems.filter(it=>it.cat===g.cat).sort((a,b)=>b.v-a.v);
+    return `<div class="oc">
+      <div class="ot" style="color:${g.cor};">${g.icon} Top ${g.cat}</div>
+      ${items.map(it=>`<div class="or"><span class="ol">${it.n}</span><span class="ov" style="color:${g.cor};">${fD(it.v)}</span></div>`).join('')}
+    </div>`;
+  }).join('');
+}
+
 // ─── INIT
 refreshChips();
 render();
+buildCostChips();
+renderCostAnalysis();
 </script>
 </body>
 </html>
