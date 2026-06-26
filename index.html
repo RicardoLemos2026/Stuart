@@ -444,27 +444,27 @@ footer p{font-size:.72rem;letter-spacing:.16em;color:var(--muted);text-transform
   <div class="ogrid" style="grid-template-columns:repeat(3,1fr);">
     <div class="oc">
       <div class="ot">Custo por Categoria — % Médio da Receita</div>
-      <div class="or"><span class="ol">Labor (Mão de Obra)</span><span class="ov" style="color:#4db8ff;">16,6%</span></div>
-      <div class="or"><span class="ol">Direct Cost (Custo Direto)</span><span class="ov" style="color:var(--meta-min);">39,3%</span></div>
-      <div class="or"><span class="ol">Sales Cost (Marketing)</span><span class="ov" style="color:var(--meta-bas);">4,0%</span></div>
-      <div class="or"><span class="ol">Overhead (Administrativo)</span><span class="ov" style="color:var(--meta-meg);">10,7%</span></div>
-      <div class="or"><span class="ol">Total de Custos</span><span class="ov gold">70,6%</span></div>
+      <div class="or"><span class="ol">Labor (Mão de Obra + Subcontrator)</span><span class="ov" style="color:#0d6efd;">34,5%</span></div>
+      <div class="or"><span class="ol">Direct Cost (Custo Direto)</span><span class="ov" style="color:var(--meta-min);">18,4%</span></div>
+      <div class="or"><span class="ol">Sales Cost (Marketing)</span><span class="ov" style="color:var(--meta-bas);">4,2%</span></div>
+      <div class="or"><span class="ol">Overhead (Administrativo)</span><span class="ov" style="color:var(--meta-meg);">11,1%</span></div>
+      <div class="or"><span class="ol">Total de Custos</span><span class="ov gold">68,2%</span></div>
     </div>
     <div class="oc">
       <div class="ot">Mês de Melhor e Pior Performance</div>
-      <div class="or"><span class="ol">Maior Margem</span><span class="ov green">Março — 60,0%</span></div>
-      <div class="or"><span class="ol">Menor Margem</span><span class="ov red">Fevereiro — -16,5%</span></div>
-      <div class="or"><span class="ol">Maior Lucro Absoluto</span><span class="ov gold">Março — $154.653</span></div>
-      <div class="or"><span class="ol">Único Mês com Prejuízo</span><span class="ov red">Fevereiro — -$11.831</span></div>
-      <div class="or"><span class="ol">Margem Média Período</span><span class="ov green">29,4%</span></div>
+      <div class="or"><span class="ol">Maior Margem</span><span class="ov green">Março — 58,4%</span></div>
+      <div class="or"><span class="ol">Menor Margem</span><span class="ov red">Fevereiro — -19,6%</span></div>
+      <div class="or"><span class="ol">Maior Lucro Absoluto</span><span class="ov gold">Março — $150.328</span></div>
+      <div class="or"><span class="ol">Único Mês com Prejuízo</span><span class="ov red">Fevereiro — -$14.067</span></div>
+      <div class="or"><span class="ol">Margem Média Período</span><span class="ov green">28,5%</span></div>
     </div>
     <div class="oc">
       <div class="ot">Maior Item de Custo (Acumulado)</div>
-      <div class="or"><span class="ol">Subcontractor Payment</span><span class="ov" style="color:var(--meta-min);">$205.778</span></div>
-      <div class="or"><span class="ol">Supplies & Materials (Proj.)</span><span class="ov" style="color:var(--meta-min);">$163.044</span></div>
-      <div class="or"><span class="ol">Employee's Salaries (COGS)</span><span class="ov" style="color:#4db8ff;">$171.050</span></div>
-      <div class="or"><span class="ol">Supplies & Materials (Geral)</span><span class="ov" style="color:var(--meta-min);">$25.401</span></div>
-      <div class="or"><span class="ol">Google + Facebook Ads</span><span class="ov" style="color:var(--meta-bas);">$30.206</span></div>
+      <div class="or"><span class="ol">Subcontractor Payment</span><span class="ov" style="color:#0d6efd;">$205.778 <span style="font-size:.72rem;color:var(--meta-mst);">→ Labor</span></span></div>
+      <div class="or"><span class="ol">Employee's Salaries (COGS)</span><span class="ov" style="color:#0d6efd;">$186.667</span></div>
+      <div class="or"><span class="ol">Supplies & Materials (Específicos)</span><span class="ov" style="color:var(--meta-min);">$172.862</span></div>
+      <div class="or"><span class="ol">Company Tools & Equipment</span><span class="ov" style="color:var(--meta-meg);">$30.202</span></div>
+      <div class="or"><span class="ol">Google + Facebook Ads</span><span class="ov" style="color:var(--meta-bas);">$36.855</span></div>
     </div>
   </div>
 
@@ -482,22 +482,22 @@ footer p{font-size:.72rem;letter-spacing:.16em;color:var(--muted);text-transform
 // Maio em diante: semanas conforme coluna A
 const D = {months:[
   {n:'Janeiro',  ws:[],
-   r25:100000, r26:125687.30, invoice:null,
+   r25:100000, r26:125687.30, invoice:128337.00,
    metaMin:200000, metaBas:220000, metaMst:242000, metaMeg:266200},
   {n:'Fevereiro', ws:[],
-   r25:100000, r26:71840.00, invoice:null,
+   r25:100000, r26:71840.00, invoice:140559.00,
    metaMin:200000, metaBas:220000, metaMst:242000, metaMeg:266200},
   {n:'Março', ws:[],
-   r25:80000, r26:257618.70, invoice:null,
+   r25:80000, r26:257618.70, invoice:228864.70,
    metaMin:160000, metaBas:176000, metaMst:193600, metaMeg:212960},
   {n:'Abril', ws:[],
-   r25:90000, r26:292113.95, invoice:null,
+   r25:90000, r26:292113.95, invoice:369000.00,
    metaMin:180000, metaBas:198000, metaMst:217800, metaMeg:239580},
   {n:'Maio', ws:['1 a 9','10 a 16','17 a 23','24 a 31'],
    r25:80000, r26:284413.97, invoice:289449.11,
    metaMin:160000, metaBas:176000, metaMst:193600, metaMeg:212960},
   {n:'Junho', ws:['1 a 6','7 a 13','14 a 20','21 a 27','28 a 30'],
-   r25:80000, r26:106718.05, invoice:114173.55,
+   r25:80000, r26:164493.05, invoice:181473.55,
    metaMin:160000, metaBas:176000, metaMst:193600, metaMeg:212960},
   {n:'Julho', ws:['1 a 4','5 a 11','12 a 18','19 a 25','26 a 31'],
    r25:100000, r26:0, invoice:null,
@@ -917,27 +917,28 @@ function switchTab(btn,id){
 }
 
 // ─── DADOS — Aba "Análise Financeira" (P&L Jan-Jun 2026)
+// Subcontractor Payment movido de Direct Cost → Labor
 const COST = {
   months: ['Jan','Fev','Mar','Abr','Mai','Jun'],
   revenue:  [125687.30, 71840.00, 257618.70, 292113.95, 284413.97, 106718.05],
-  labor:    [19686.05, 30374.21, 34224.49, 36446.73, 50318.66, 15616.58],
-  direct:   [53360.24, 28271.74, 32889.22, 130273.20, 160578.39, 9862.41],
+  labor:    [30656.05, 42313.38, 44387.29, 112687.92, 146783.24, 15616.58],
+  direct:   [42390.24, 16332.57, 22726.42, 54032.01, 64113.81, 9862.41],
   sales:    [6236.14, 8449.81, 5603.07, 10238.04, 10990.08, 6648.81],
   overhead: [12009.04, 16575.04, 30249.18, 30130.46, 21521.09, 15484.05],
-  lucro:    [34395.83, -11830.80, 154652.74, 85025.52, 41005.75, 59106.20],
-  margem:   [27.3662, -16.4683, 60.0316, 29.107, 14.4176, 55.3854],
+  lucro:    [32583.83, -14066.80, 150327.74, 80316.52, 17448.75, 57811.20],
+  margem:   [25.92, -19.58, 58.36, 27.50, 6.14, 54.17],
   owner:    [17520.85, 4043.48, 5737.83, 7407.21, 8597.95, 3389.59],
-  // Top itens de custo (acumulado Jan-Jun)
+  // Top itens (acumulado Jan-Jun) — Subcontractor agora em Labor
   topItems: [
-    {n:"Subcontractor Payment", v:205777.74, cat:'Direct Cost', cor:'#E05252'},
+    {n:"Subcontractor Payment", v:205777.74, cat:'Labor', cor:'#4db8ff'},
     {n:"Employee's Salaries (COGS)", v:186666.72, cat:'Labor', cor:'#4db8ff'},
-    {n:"Supplies & Materials (Específicos)", v:172862.14, cat:'Direct Cost', cor:'#E05252'},
-    {n:"Supplies & Materials (Geral)", v:25029.96, cat:'Direct Cost', cor:'#E05252'},
-    {n:"Google Ads", v:24005.96, cat:'Sales Cost', cor:'#ffc107'},
-    {n:"Company Tools & Equipment", v:30202.39, cat:'Overhead', cor:'#C9A84C'},
-    {n:"Facebook Ads", v:12849.01, cat:'Sales Cost', cor:'#ffc107'},
-    {n:"Dumpster", v:11112.36, cat:'Direct Cost', cor:'#E05252'},
-    {n:"Continuing Education", v:10954.30, cat:'Overhead', cor:'#C9A84C'},
+    {n:"Supplies & Materials (Específicos)", v:172862.14, cat:'Direct Cost', cor:'var(--meta-min)'},
+    {n:"Supplies & Materials (Geral)", v:25029.96, cat:'Direct Cost', cor:'var(--meta-min)'},
+    {n:"Google Ads", v:24005.96, cat:'Sales Cost', cor:'var(--meta-bas)'},
+    {n:"Company Tools & Equipment", v:30202.39, cat:'Overhead', cor:'var(--meta-meg)'},
+    {n:"Facebook Ads", v:12849.01, cat:'Sales Cost', cor:'var(--meta-bas)'},
+    {n:"Dumpster", v:11112.36, cat:'Direct Cost', cor:'var(--meta-min)'},
+    {n:"Continuing Education", v:10954.30, cat:'Overhead', cor:'var(--meta-meg)'},
   ]
 };
 
